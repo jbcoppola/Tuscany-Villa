@@ -26,15 +26,17 @@
 		<!--HEADER-->
 		<div class="container no-padding">
 			<div class="page-header row">
-				<p><h1>HOMEPAGE</h1></p>
-				<p><h3>design</h3></p>
+				<div class="col-md-12 hidden-xs">
+					<p><h1>HOMEPAGE</h1></p>
+					<p><h3>design</h3></p>
+				</div>
 			</div>
 		</div>
 		<!--NAVBAR-->
 		<div class="container">
 			<div class="row">
 				<nav class="navbar navbar-default">
-					<div class="container-fluid">
+					<div class="container">
 						<!-- Brand and toggle get grouped for better mobile display -->
 						<div class="navbar-header">
 							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -43,24 +45,30 @@
 								<span class="icon-bar"></span>
 								<span class="icon-bar"></span>
 							</button>
+							<!--LEFT NAVBAR BUTTON-->
 							<div class="navbar-left-section">
-								<a class="navbar-brand" href="#">Windows on Tuscany</a>
+								<a class="navbar-brand" href="#">
+									<div class="container logo-box">
+										<img src="images/logobutton.png" />
+									</div>
+								</a>
 							</div>
 						</div>
-						<!-- Collect the nav links, forms, and other content for toggling -->
-						<div class="collapse navbar-collapse col-" id="bs-example-navbar-collapse-1">
+						<!-- CENTER NAVBAR ELEMENTS -->
+						<div class="collapse navbar-collapse col-">
 							<div class="centered">
-								<ul class="nav navbar-nav centered">
+								<ul class="nav navbar-nav">
 									<li><a href="#">ABOUT</a></li>
 									<li><a href="#">CITIES</a></li>
 									<li><a href="#">CONTACTS</a></li>
 								</ul>
 							</div>
+							<!--RIGHT NAVBAR ELEMENTS-->
 							<ul class="nav navbar-nav navbar-right">
 								<li class="dropdown">
 									<a href="#" class="dropdown-toggle col-xs-12" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"></a>
 								</li>
-								<li><a href="#">Properties</a></li>
+								<li><a href="#" id="properties-button">PROPERTIES</a></li>
 							</ul>
 						</div><!-- /.navbar-collapse -->
 					</div><!-- /.container-fluid -->
@@ -68,24 +76,28 @@
 			</div>
 		</div>
 		<!--JUMBOTRON ROW-->
-		<div class="row">
-			<div class="container no-padding">
-				<div class="col-md-8 col-sm-12 no-padding">
-					<div class="jumbotron big-jumbo">
-						<div class="container trans-box">
-							<div class="big-jumbo-text flexbox">
-								<p>FEEL LIKE YOUR HOME AWAY FROM HOME</p>
-								<p><h6>FIND YOUR EXCLUSIVE TUSCANY VILLAGE FOR THE HOLIDAYS</h6></p>
+		<div class="container">
+			<div class="row">
+				<div class="container no-padding">
+					<div class="col-md-8 col-sm-12 no-padding">
+						<!--LEFT JUMBOTRON-->
+						<div class="jumbotron big-jumbo">
+							<div class="container trans-box">
+								<div class="big-jumbo-text flexbox">
+									<p>FEEL LIKE YOUR HOME AWAY FROM HOME</p>
+									<p><h6>FIND YOUR EXCLUSIVE TUSCANY VILLAGE FOR THE HOLIDAYS</h6></p>
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="col-md-4 col-sm-12 no-padding">
-					<div class="jumbotron map-jumbo">
-						<div class="container white-box">
-							<div class="map-jumbo-text flexbox">
-								<p>FIND YOUR TUSCANY VILLA</p>
-								<p><h6>EXPLORE THE MAP</h6></p>
+					<div class="col-md-4 col-sm-12 no-padding">
+						<!--RIGHT JUMBOTRON-->
+						<div class="jumbotron map-jumbo">
+							<div class="container white-box">
+								<div class="map-jumbo-text flexbox">
+									<p>FIND YOUR TUSCANY VILLA</p>
+									<p><h6>EXPLORE THE MAP</h6></p>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -95,7 +107,7 @@
 		<!--GRID ROW 1-->
 		<div class="container big-grid-box">
 			<div class="row grid-box">
-				<div class="col-md-3 panel">
+				<div class="col-md-3 col-sm-6 panel">
 					<div class="thumbnail flexbox row1col1">
 						<div class="container-fluid">
 							<p><h3>SOME ACCOMODATION IDEAS FOR A PERFECT STAY</h3></p>
@@ -103,7 +115,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-3 panel">
+				<div class="col-md-3 col-sm-6 panel">
 					<div class="thumbnail flexbox row1col2">
 						<div class="trans-box">
 							<div class="container-fluid idea-box">
@@ -113,7 +125,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-3 panel">
+				<div class="col-md-3 col-sm-6 panel">
 					<div class="thumbnail flexbox row1col3">
 						<div class="trans-box">
 							<div class="container-fluid idea-box">
@@ -123,7 +135,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-3 panel">
+				<div class="col-md-3 col-sm-6 panel">
 					<div class="thumbnail flexbox row1col4">
 						<div class="trans-box">
 							<div class="container-fluid idea-box">
@@ -136,14 +148,14 @@
 			</div>
 			<!--GRID ROW 2-->
 			<div class="row grid-box">
-				<div class="col-md-3 panel">
+				<div class="col-md-3 col-sm-6 panel">
 					<div class="thumbnail row2col1">
 						<div class="container-fluid sell-box">
 
 						</div>
 					</div>
 				</div>
-				<div class="col-md-3 panel">
+				<div class="col-md-3 col-sm-6 panel">
 					<div class="thumbnail flexbox">
 						<div class="container-fluid text-box">
 							<p><h2>WHY BOOK A VILLA</h2></p>
@@ -151,18 +163,18 @@
 								We offer clients an exclusive portfolio of private villas located in some of the most
 								charming corners of the Italian countryside and coastline.
 							</p>
-							<button class="btn btn-default" type="submit">Learn More</button>
+							<button class="btn learn-more" type="submit">Learn More</button>
 						</div>
 					</div>
 				</div>
-				<div class="col-md-3 panel">
+				<div class="col-md-3 col-sm-6 panel">
 					<div class="thumbnail row2col3">
 						<div class="container-fluid sell-box">
 
 						</div>
 					</div>
 				</div>
-				<div class="col-md-3 panel">
+				<div class="col-md-3 col-sm-6 panel">
 					<div class="thumbnail flexbox">
 						<div class="container-fluid text-box">
 							<p><h2>WHY US</h2></p>
@@ -170,14 +182,14 @@
 								Windows on Tuscany is a brand founded by Leonardo Farragamo in 1968, specialized in property
 								management and in short and long term rentals of prestigious apartments in Tuscany.
 							</p>
-							<button class="btn btn-default" type="submit">Learn More</button>
+							<button class="btn learn-more" type="submit">Learn More</button>
 						</div>
 					</div>
 				</div>
 			</div>
 			<!--GRID ROW 3-->
 			<div class="row grid-box">
-				<div class="col-md-3 panel">
+				<div class="col-md-3 col-sm-6 panel">
 					<div class="thumbnail flexbox">
 						<div class="container-fluid text-box">
 							<p><h2>SPEAK WITH OUR EXPERTS</h2></p>
@@ -188,31 +200,63 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-3 panel">
-					<div class="thumbnail">
+				<div class="col-md-3 col-sm-6 panel">
+					<div class="thumbnail row3col2">
 						<div class="container-fluid">
 						</div>
 					</div>
 				</div>
-				<div class="col-md-3 panel">
+				<div class="col-md-3 col-sm-6 panel">
 					<div class="thumbnail flexbox row3col3">
 						<div class="container-fluid">
-							<p>OUR CLIENTS TRUST US</p>
-							<p>248</p>
-							<p>GUEST REVIEWS</p>
-							<p>4.5/5.0</p>
-							<button class="btn btn-default" type="submit">Read all reviews</button>
+							<p><h4>OUR CLIENTS TRUST US</h4></p>
+							<p><h1>248</h1></p>
+							<p><h3>GUEST REVIEWS</h3></p>
+							<p><h2>4.5/5.0</h2></p>
+							<button class="btn btn-reviews" type="submit">READ ALL REVIEWS</button>
 						</div>
 					</div>
 				</div>
-				<div class="col-md-3 panel">
+				<div class="col-md-3 col-sm-6 panel">
 					<div class="thumbnail row3col4">
-						<div class="container-fluid">
+						<div class="container-fluid flexbox">
+							<p>SEEN ON</p>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div><!--grid container-->
+		<!--FOOTER-->
+		<div class="container">
+			<div class="row">
+				<div class="container footer no-padding">
+					<div class="col-md-8 no-padding">
+						<div class="container-fluid">
+							<div class="row">
+								<div class="col-md-1 hidden-sm hidden-xs">
+									<img src="images/logogrey.png" id="greylogo" />
+								</div>
+								<div class="col-md-11">
+									<p>
+										All contents © 1986-2014 WINDOWS ON ITALY S.R.L. Via dei Serragli 6/R, 50124 Firenze,
+										ITALIA - P.IVA. 05797190484
+									</p>
+									<p>
+										WINDOWS ON ITALY is part of the Group WINDOWS ON EUROPE SpA Piazza 4 Novembre 7, 20124
+										Milano, ITALIA - P.IVA. 05874010969
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 no-padding">
+						<div class="container-fluid">
+							<!--social media buttons go here?-->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div><!--page container-fluid-->
 </body>
 </html>

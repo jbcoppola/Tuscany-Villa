@@ -3,6 +3,9 @@
 	background-color: lightgrey;
 }
 
+body .container-fluid {
+	padding: 0px;
+}
 .page-header {
 	text-align: center;
 	padding: 0px;
@@ -25,19 +28,24 @@
 .centered {
     display: inline-block;
     float: none;
+	vertical-align: middle;
 }
 
 .navbar {
 	border-radius: 0px;
 }
 
-.navbar .container-fluid {
+.navbar .navbar-header {
 	background-color: white;
+}
+
+.navbar .container-fluid {
 	padding: 0px;
 }
 
 .navbar .navbar-collapse {
     text-align: center;
+	padding: 0px;
 }
 
 .navbar.navbar-default {
@@ -45,18 +53,19 @@
 	border: 0px;
 }
 
-.navbar-left-section {
-	display: inline-block;
-	float:left;
-	background-color: cadetblue;
-	padding: 2px 10px 3px 10px;
-	vertical-align: middle;
-	max-width: 200px;
-	text-align: right;
+
+
+.logo-box {
+	width: 158px;
+	padding: 0px;
 }
 
-.navbar-left-section .nav li {
-	color: white;
+.navbar-brand {
+	padding: 0px;
+}
+
+.navbar-brand img {
+	height: 50px;
 }
 
 .jumbotron {
@@ -135,6 +144,10 @@
 	border-radius: 0px;
 }
 
+.col-md-3.panel {
+	max-width: 348px;
+}
+
 .panel .thumbnail{
 	height: 348px;
 	max-width: 348px;
@@ -205,8 +218,82 @@
 	background-image: url('images/Villa-Rucellai-Toscani-2812-2-348x348.jpg');
 }
 
+.row3col2 {
+	background-image: url('images/Villa-Vanna-231-348x348.jpg');
+}
+
+.row3col3 {
+	background-color: mediumaquamarine;
+}
+
+.row3col3 .container-fluid {
+	padding: 45px 35px;
+	border: 2px solid cadetblue;
+	color: white;
+}
+
+.row3col3 .container-fluid h4 {
+	font-size: 14px;
+	margin: 0px;
+}
+
+.row3col3 .container-fluid h1 {
+	font-size: 54px;
+	margin: 0px;
+	font-style: italic;
+}
+
+.row3col3 .container-fluid h3 {
+	font-size: 24px;
+	margin: 0px;
+}
+
+.row3col3 .container-fluid h2 {
+	font-size: 44px;
+	margin: 0px;
+	font-style: italic;
+}
+
 .row3col4 {
 	background-image: url('images/box_partners.png');
 	background-repeat: no-repeat;
 	background-position: center;
+}
+
+.row3col4 .container-fluid p {
+	padding-top: 50px;
+}
+
+.footer {
+	background-color: #e4e4e4;
+	color: dimgray;
+}
+
+.footer .no-padding .container-fluid {
+	margin: 0px 40px;
+	padding: 40px 0px 30px 0px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn {
+	border-radius: 0px;
+	background: rgba(0,0,0,0);
+}
+
+.btn.learn-more {
+	border: 1px solid skyblue;
+	color: skyblue;
+}
+
+.btn.btn-reviews {
+	border: 1px solid #3e9789;
+	color: #3e9789;
+}
+
+#properties-button {
+	background-color: skyblue;
+}
+
+#greylogo {
+	padding-top: 25px;
 }
