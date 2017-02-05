@@ -1,12 +1,12 @@
 ﻿body {
 	font-family: 'Montserrat', sans-serif;
+	background-color: lightgrey;
 }
 
 .page-header {
 	text-align: center;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	padding-bottom: 0px;
+	padding: 0px;
+	border: 0px;
 	margin: 0px;
 }
 
@@ -27,12 +27,36 @@
     float: none;
 }
 
+.navbar {
+	border-radius: 0px;
+}
+
+.navbar .container-fluid {
+	background-color: white;
+	padding: 0px;
+}
+
 .navbar .navbar-collapse {
     text-align: center;
 }
 
 .navbar.navbar-default {
 	margin-bottom: 4px;
+	border: 0px;
+}
+
+.navbar-left-section {
+	display: inline-block;
+	float:left;
+	background-color: cadetblue;
+	padding: 2px 10px 3px 10px;
+	vertical-align: middle;
+	max-width: 200px;
+	text-align: right;
+}
+
+.navbar-left-section .nav li {
+	color: white;
 }
 
 .jumbotron {
@@ -44,6 +68,11 @@
 	padding-left: 0px;
 	padding-right: 0px;
 }
+
+.container .jumbotron {
+	border-radius: 0px;
+}
+
 
 .big-jumbo {
 	background-image: url('images/tuscany-villas-sant-anna.jpg');
@@ -95,6 +124,11 @@
 
 .big-grid-box {
 	margin: auto;
+	border: 0px;
+}
+
+.col-md-3{
+	border: 0px;
 }
 
 .grid-box .panel .thumbnail {
