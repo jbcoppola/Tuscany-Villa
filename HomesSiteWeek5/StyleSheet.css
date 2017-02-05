@@ -101,6 +101,50 @@ body .container-fluid {
 	padding: 0px;
 }
 
+.trans-box .row {
+	margin: 0px;
+}
+
+.left-sell-box {
+	padding-top: 10px;
+}
+
+.left-sell-box p {
+	color: white;
+	text-align: center;
+	margin: 0px;
+	word-spacing: 5px;
+}
+
+.left-sell-box h1 {
+	font-size: 18px;
+	margin: 0px;
+	color: white;
+	text-align: center;
+}
+
+.right-sell-box {
+	padding: 10px;
+	background-color: mediumaquamarine;
+}
+
+.right-sell-box p {
+	color: white;
+	text-align: center;
+	margin: 0px;
+}
+
+.right-sell-box h1 {
+	margin: 0px;
+	color: white;
+	font-size: 18px;
+	text-align: center;
+}
+
+.bottom-box {
+	margin-top: 280px;
+}
+
 .white-box {
 	background-color: rgb(210,210,210);
 	padding: 0px;
@@ -136,7 +180,7 @@ body .container-fluid {
 	border: 0px;
 }
 
-.col-md-3{
+.col-md-3 {
 	border: 0px;
 }
 
@@ -159,7 +203,7 @@ body .container-fluid {
 
 .grid-box .panel .thumbnail .idea-box {
 	color: white;
-	padding: 10px 0px 10px 0px;
+	padding: 10px 0px;
 	text-align: center;
 }
 .grid-box .panel .thumbnail .idea-box p {
@@ -180,6 +224,7 @@ body .container-fluid {
 
 .grid-box .panel .thumbnail .text-box {
 	text-align: center;
+	padding: 20px;
 }
 
 .grid-box .panel .thumbnail .text-box h2 {
@@ -192,6 +237,10 @@ body .container-fluid {
  align-items: center;
  flex-flow: column;
  text-align: center;
+}
+
+.row1col1 .container-fluid {
+	padding: 20px;
 }
 
 .row1col1 h3 {
@@ -227,7 +276,7 @@ body .container-fluid {
 }
 
 .row3col3 .container-fluid {
-	padding: 45px 35px;
+	padding: 35px 25px;
 	border: 2px solid cadetblue;
 	color: white;
 }
@@ -275,6 +324,10 @@ body .container-fluid {
 	font-family: Arial, Helvetica, sans-serif;
 }
 
+.footer .col-md-4 {
+	padding: 30px;
+}
+
 .btn {
 	border-radius: 0px;
 	background: rgba(0,0,0,0);
@@ -297,3 +350,4 @@ body .container-fluid {
 #greylogo {
 	padding-top: 25px;
 }
+
