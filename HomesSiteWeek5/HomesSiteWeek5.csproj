@@ -97,11 +97,13 @@
     <Content Include="images\314-348x348.jpg" />
     <Content Include="images\3b-348x348.jpg" />
     <Content Include="images\42-348x348.jpg" />
+    <Content Include="images\arrow.png" />
     <Content Include="images\box_partners.png" />
     <Content Include="images\hospital-bed.png" />
     <Content Include="images\img-thing.jpg" />
     <Content Include="images\logobutton.png" />
     <Content Include="images\logogrey.png" />
+    <Content Include="images\mag-glass.png" />
     <Content Include="images\people-silhouettes.png" />
     <Content Include="images\shower.png" />
     <Content Include="images\tuscany-villas-sant-anna.jpg" />

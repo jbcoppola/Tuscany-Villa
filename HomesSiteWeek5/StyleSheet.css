@@ -90,10 +90,15 @@ body .container-fluid {
 .big-jumbo-text {
 	color: white;
 	padding: 10px;
+	max-height: 80px;
+	text-align: center;
 }
 
 .big-jumbo-text p {
 	margin: 0px;
+}
+.big-jumbo-text .arrow {
+	margin-left: 200px;
 }
 
 .trans-box {
@@ -148,6 +153,16 @@ body .container-fluid {
 .white-box {
 	background-color: rgb(210,210,210);
 	padding: 0px;
+	text-align: center;
+	max-height: 108px;
+}
+
+.white-box h6 {
+	margin: 5px;
+}
+
+.white-box .mag-glass {
+	margin-left: 50px;
 }
 
 .map-jumbo {
@@ -161,7 +176,7 @@ body .container-fluid {
 
 .map-jumbo-text {
 	font-family: 'Montserrat', sans-serif;
-	padding: 10px;
+	padding: 10px 10px 0px 10px;
 }
 
 .no-padding {
@@ -350,4 +365,3 @@ body .container-fluid {
 #greylogo {
 	padding-top: 25px;
 }
-
