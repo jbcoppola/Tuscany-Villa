@@ -90,15 +90,15 @@ body .container-fluid {
 .big-jumbo-text {
 	color: white;
 	padding: 10px;
-	max-height: 80px;
 	text-align: center;
 }
 
 .big-jumbo-text p {
 	margin: 0px;
 }
-.big-jumbo-text .arrow {
-	margin-left: 200px;
+.arrow {
+	margin-top: -10px;
+	margin-right: -500px;
 }
 
 .trans-box {
