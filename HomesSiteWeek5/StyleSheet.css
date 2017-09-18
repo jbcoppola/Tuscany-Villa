@@ -14,10 +14,6 @@ body .container-fluid {
 .trans-box .row {
 	margin: 0px;
 }
-.no-padding {
-	padding-right: 0px;
-	padding-left: 0px;
-}
 .flexbox {
  display:flex;
  justify-content:space-around;
@@ -82,6 +78,9 @@ body .container-fluid {
 
 /*JUMBOTRON*/
 
+.jumbotron-row > div {
+    padding: 0px;
+}
 .jumbotron {
 	margin: 0px;
 	height: 348px;
@@ -90,26 +89,23 @@ body .container-fluid {
 	padding-left: 0px;
 	padding-right: 0px;
 }
-.container .jumbotron {
+.jumbotron-row .jumbotron {
 	border-radius: 0px;
 }
-
-/*LEFT JUMBOTRON*/
-
-.big-jumbo {
-	background-image: url('images/tuscany-villas-sant-anna.jpg');
+.jumbotron-row .col-md-8 .jumbotron {
+    background-image: url('images/tuscany-villas-sant-anna.jpg');
 }
-.big-jumbo-text {
+.jumbotron-row .jumbotron .trans-box {
 	color: white;
 	padding: 10px;
 	text-align: center;
 }
-.big-jumbo-text p {
+.trans-box p {
 	margin: 0px;
 }
 .arrow {
-	margin-top: -10px;
-	margin-right: -500px;
+	float: right;
+    margin: -10px 15px;
 }
 
 /*RIGHT JUMBOTRON*/
@@ -120,60 +116,64 @@ body .container-fluid {
 	max-height: 108px;
 }
 .white-box h6 {
-	margin: 5px;
+    padding-bottom: 10px;
+	margin: 10px 0px 0px 0px;
 }
 .white-box .mag-glass {
-	margin-left: 50px;
+	float: right;
 }
-.map-jumbo {
+.jumbotron-row .col-md-4 .jumbotron {
 	background-image: url('images/Versilia2.png');
 	max-width: 557px;
 }
-.map-jumbo p {
+.jumbotron-row .col-md-4 .jumbotron p {
 	margin: 0px;
 }
-.map-jumbo-text {
+.jumbotron-row .col-md-4 .jumbotron .white-box {
 	font-family: 'Montserrat', sans-serif;
 	padding: 10px 10px 0px 10px;
 }
 
 /*GRID (GENERAL)*/
-
-.grid-box .col-md-3 {
-	padding-left: 0px;
-	padding-right: 0px;
-	margin: 0px;
+.main-row .col-md-3 {
+    padding: 0px;
+    border: 0px;
+    margin: 0px;
 }
-.big-grid-box {
-	margin: auto;
-	border: 0px;
-}
-.col-md-3 {
-	border: 0px;
-}
-.grid-box .panel .thumbnail {
+.main-row .panel {
 	border-radius: 0px;
 }
-.col-md-3.panel {
+.col-md-3 {
 	max-width: 348px;
 }
-.panel .thumbnail{
-	height: 348px;
+.thumbnail{
+    height: 348px;
 	max-width: 348px;
-}
-.thumbnail {
 	margin: 0px;
+    border-radius: 0px;
 }
 
 /*GRID (SPECIFIC)*/
 
-.btn {
+.btn,
+.btn:focus {
 	border-radius: 0px;
 	background: rgba(0,0,0,0);
+}
+.btn:hover {
+    background: rgba(0,0,0,0.1);
+}
+.btn:active {
+    background: rgba(0,0,0,0.2);
+    box-shadow: none;
 }
 .btn.learn-more {
 	border: 1px solid skyblue;
 	color: skyblue;
+}
+.btn.learn-more:hover {
+    border-color: deepskyblue;
+    color: deepskyblue;
 }
 .btn.btn-reviews {
 	border: 1px solid #3e9789;
@@ -220,36 +220,32 @@ body .container-fluid {
 }
 
 
-.grid-box .panel .thumbnail .idea-box {
+.idea-box {
 	color: white;
-	padding: 10px 0px;
-	text-align: center;
-}
-.grid-box .panel .thumbnail .idea-box p {
-	padding: 3px 20px;
-	margin-bottom: 0px;
-}
-.grid-box .panel .thumbnail .idea-box {
+	padding: 10px;
 	text-align: center;
 	font-size: 15px;
 }
-.grid-box .panel .thumbnail .idea-box h6 {
+.idea-box p {
+	padding: 3px 20px;
 	margin: 0px;
-	padding: 0px 15px;
-	font-size: 10px;
+}
+.idea-box h6 {
+    margin: 0px;
+    font-size: 10px;
 }
 
-.grid-box .panel .thumbnail .text-box {
+.text-box {
 	text-align: center;
 	padding: 20px;
 }
-.grid-box .panel .thumbnail .text-box h2 {
+.text-box h2 {
 	font-size: 24px;
 }
 
 
 
-.row1col1 .container-fluid {
+.row1col1 {
 	padding: 20px;
 }
 .row1col1 h3 {
@@ -283,31 +279,30 @@ body .container-fluid {
 }
 
 
-
 .row3col3 {
 	background-color: mediumaquamarine;
 }
-.row3col3 .container-fluid {
-	padding: 35px 25px;
+.row3col3 > div {
+    height: 98%;
+    width: 95%;
 	border: 2px solid cadetblue;
 	color: white;
 }
-.row3col3 .container-fluid h4 {
-	font-size: 14px;
-	margin: 0px;
+.row3col3 * {
+    margin: 0px;
 }
-.row3col3 .container-fluid h1 {
+.row3col3 h4 {
+	font-size: 14px;
+}
+.row3col3 h1 {
 	font-size: 54px;
-	margin: 0px;
 	font-style: italic;
 }
-.row3col3 .container-fluid h3 {
+.row3col3 h3 {
 	font-size: 24px;
-	margin: 0px;
 }
-.row3col3 .container-fluid h2 {
+.row3col3 h2 {
 	font-size: 44px;
-	margin: 0px;
 	font-style: italic;
 }
 
@@ -317,7 +312,7 @@ body .container-fluid {
 	background-position: center;
 }
 
-.row3col4 .container-fluid p {
+.row3col4 p {
 	padding-top: 50px;
 }
 
@@ -326,14 +321,12 @@ body .container-fluid {
 .footer {
 	background-color: #e4e4e4;
 	color: dimgray;
-}
-.footer .no-padding .container-fluid {
-	margin: 0px 40px;
-	padding: 40px 0px 30px 0px;
+	padding: 40px;
+    padding-bottom: 20px;
 	font-family: Arial, Helvetica, sans-serif;
 }
-.footer .col-md-4 {
-	padding: 30px;
+.footer .col-md-11 {
+    padding-left: 30px;
 }
 #greylogo {
 	padding-top: 25px;
